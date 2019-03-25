@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>梦月的空间</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+   <h1>这是我的空间</h1>
+   <h1 style="font-size:100px">梦月是老王八!!!!!!!</h1>
+   <script>
+	let p =document.getElementsByTagName("h1")[1];
+	p.style.display="none";
+	let flag =true;
+	let color=['red','blue','yellow','purple','pick'];
+	let index =0;
+	window.setInterval(()=>{
+		if(flag){
+				p.style.display="block";
+				p.style.color = color[index];
+				index++;
+				if(index>=color.length){
+					index=0;
+				}
+			flag =false;
+		}else{
+				p.style.display="none";
+		}
+		
+	},1000)
+			window.setInterval(()=>{
+			flag =true;	
+		},2000)
+   </script>
+   
+   
+</body>
+</html>
