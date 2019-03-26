@@ -13,6 +13,22 @@
     <script src="static/js/swiper.min.js"></script>
 </head>
 <script>
+		var str = '&#x5feb;&#x4e50;&#x6bd4;&#x56de;&#x5fc6;&#x91cd;&#x8981;&#xff0c;&#x662f;&#x56e0;&#x4e3a;&#x6bcf;&#x4e00;&#x4efd;&#x5feb;&#x4e50;&#x90fd;&#x5c06;&#x6210;&#x4e3a;&#x56de;&#x5fc6;&#x3002;\n' +
+        '\n' +
+        '&#x4f60;&#x8981;&#x662f;&#x95ee;&#x6211;&#x559c;&#x6b22;&#x4ec0;&#x4e48;&#xff0c;&#x6211;&#x80fd;&#x8bf4;&#x51fa;&#x5f88;&#x591a;&#xff0c;&#x6bd4;&#x5982;&#x6211;&#x559c;&#x6b22;&#x5403;&#x706b;&#x9505;&#xff0c;&#x559c;&#x6b22;&#x6253;&#x7fbd;&#x6bdb;&#x7403;&#xff0c;&#x559c;&#x6b22;&#x770b;&#x7535;&#x5f71;&#xff0c;&#x559c;&#x6b22;&#x6253;&#x6e38;&#x620f;&#xff0c;&#x8fd8;&#x6709;&#x597d;&#x591a;&#x597d;&#x591a;&#x3002;&#x53ef;&#x662f;&#xff0c;&#x6211;&#x559c;&#x6b22;&#x8fd9;&#x4e9b;&#x7684;&#x5f00;&#x59cb;&#xff0c;&#x5f88;&#x591a;&#x662f;&#x56e0;&#x4e3a;&#x548c;&#x4f60;&#x4eec;&#x4e00;&#x8d77;&#x5440;&#x3002;\n' +
+        '\n' +
+        '&#x4e0d;&#x8bba;&#x4eca;&#x540e;&#x5982;&#x4f55;&#xff0c;&#x81f3;&#x5c11;&#x73b0;&#x5728;&#xff0c;&#x6211;&#x662f;&#x5feb;&#x4e50;&#x7684;&#x3002;\n';
+		var i = 0;
+		function typing(){
+			var divTyping = document.getElementById('divTyping');
+			if (i <= str.length) {
+				divTyping.innerHTML = str.slice(0, i++) + '_';
+				setTimeout('typing()', 200);//&#x9012;&#x5f52;&#x8c03;&#x7528;
+			}
+			else{
+				divTyping.innerHTML = str;//&#x7ed3;&#x675f;&#x6253;&#x5b57;,&#x79fb;&#x9664; _ &#x5149;&#x6807;
+			}
+		}
     window.onload=()=> {
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'vertical',
@@ -31,22 +47,7 @@
             autoplayDisableOnInteraction:false
         });
 
-    var str = '&#x5feb;&#x4e50;&#x6bd4;&#x56de;&#x5fc6;&#x91cd;&#x8981;&#xff0c;&#x662f;&#x56e0;&#x4e3a;&#x6bcf;&#x4e00;&#x4efd;&#x5feb;&#x4e50;&#x90fd;&#x5c06;&#x6210;&#x4e3a;&#x56de;&#x5fc6;&#x3002;\n' +
-        '\n' +
-        '&#x4f60;&#x8981;&#x662f;&#x95ee;&#x6211;&#x559c;&#x6b22;&#x4ec0;&#x4e48;&#xff0c;&#x6211;&#x80fd;&#x8bf4;&#x51fa;&#x5f88;&#x591a;&#xff0c;&#x6bd4;&#x5982;&#x6211;&#x559c;&#x6b22;&#x5403;&#x706b;&#x9505;&#xff0c;&#x559c;&#x6b22;&#x6253;&#x7fbd;&#x6bdb;&#x7403;&#xff0c;&#x559c;&#x6b22;&#x770b;&#x7535;&#x5f71;&#xff0c;&#x559c;&#x6b22;&#x6253;&#x6e38;&#x620f;&#xff0c;&#x8fd8;&#x6709;&#x597d;&#x591a;&#x597d;&#x591a;&#x3002;&#x53ef;&#x662f;&#xff0c;&#x6211;&#x559c;&#x6b22;&#x8fd9;&#x4e9b;&#x7684;&#x5f00;&#x59cb;&#xff0c;&#x5f88;&#x591a;&#x662f;&#x56e0;&#x4e3a;&#x548c;&#x4f60;&#x4eec;&#x4e00;&#x8d77;&#x5440;&#x3002;\n' +
-        '\n' +
-        '&#x4e0d;&#x8bba;&#x4eca;&#x540e;&#x5982;&#x4f55;&#xff0c;&#x81f3;&#x5c11;&#x73b0;&#x5728;&#xff0c;&#x6211;&#x662f;&#x5feb;&#x4e50;&#x7684;&#x3002;\n';
-    var i = 0;
-    function typing(){
-        var divTyping = document.getElementById('divTyping');
-        if (i <= str.length) {
-            divTyping.innerHTML = str.slice(0, i++) + '_';
-            setTimeout('typing()', 200);//&#x9012;&#x5f52;&#x8c03;&#x7528;
-        }
-        else{
-            divTyping.innerHTML = str;//&#x7ed3;&#x675f;&#x6253;&#x5b57;,&#x79fb;&#x9664; _ &#x5149;&#x6807;
-        }
-    }
+    
     typing();
 
     }
