@@ -60,9 +60,9 @@
     <audio src="static/audio/audio-1.mp3" loop="loop" autoplay="autoplay"></audio>
     <section class="col-md-18 row">
         <div class="clearFix content">
-            <img class="col-md-6" src="static/img/con-1.jpg" width="400px" height="300px"/>
+            <img class="col-md-6"  src="static/img/con-1.jpg" width="400px" height="300px"/>
             <div class="col-md-6" id='divTyping' style="width: 300px;height:300px; font-family: myFont;font-size: 22px"></div>
-            <img class="col-md-6" src="static/img/con-3.jpg" width="400px" height="300px" />
+            <img class="col-md-6" style="margin-top:1%;" src="static/img/con-3.jpg" width="400px" height="300px" />
         </div>
     </section>
     <footer class="col-md-18" style="margin-top: 1%;margin-bottom: 1%">
@@ -84,7 +84,7 @@
         var divTyping = document.getElementById('divTyping');
         if (i <= str.length) {
             divTyping.innerHTML = str.slice(0, i++) + '_';
-            setTimeout('typing()', 10);//&#x9012;&#x5f52;&#x8c03;&#x7528;
+            setTimeout('typing()', 200);//&#x9012;&#x5f52;&#x8c03;&#x7528;
         }
         else{
             divTyping.innerHTML = str;//&#x7ed3;&#x675f;&#x6253;&#x5b57;,&#x79fb;&#x9664; _ &#x5149;&#x6807;
