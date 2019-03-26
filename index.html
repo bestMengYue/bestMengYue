@@ -4,37 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>梦月的空间</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>&#x6b22;&#x8fce;&#x4f7f;&#x7528;&#x5c0f;&#x8d5b;&#x966a;&#x4f60;</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="icon" href="static/img/bitbug_favicon.ico">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <script src="static/js/swiper.min.js"></script>
 </head>
+<script>
+    window.onload=()=> {
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: true,
+            autoplay: true,
+            speed: 300,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'coverflow',
+            slidesPerView: 3,
+            centeredSlides: true,
+            mousewheel: true,
+            disableOnInteraction: false,
+            autoplayDisableOnInteraction:false
+        })
+    }
+</script>
+
+<style type="text/css">
+    @font-face{
+        font-family:myFont;
+        src:url('static/font/xjlFont.fon');
+    }
+    p{
+        font-family: myFont;
+    }
+</style>
+
 <body>
-   <h1>这是我的空间</h1>
-   <h1 style="font-size:100px">梦月是老王八!!!!!!!</h1>
-   <script>
-	let p =document.getElementsByTagName("h1")[1];
-	p.style.display="none";
-	let flag =true;
-	let color=['red','blue','yellow','purple','pick'];
-	let index =0;
-	window.setInterval(()=>{
-		if(flag){
-				p.style.display="block";
-				p.style.color = color[index];
-				index++;
-				if(index>=color.length){
-					index=0;
-				}
-			flag =false;
-		}else{
-				p.style.display="none";
-		}
-		
-	},1000)
-			window.setInterval(()=>{
-			flag =true;	
-		},2000)
-   </script>
-   
-   
+<div class="wrapper">
+    <header class="col-md-18">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img alt="yayaya &#x56fe;&#x7247;&#x4e0d;&#x89c1;&#x4e86;" src="static/img/layb-1.jpg"/></div>
+                <div class="swiper-slide"><img alt="&#x4e0d;&#x8d56;&#x6211; &#x80af;&#x5b9a;&#x662f;&#x670d;&#x52a1;&#x5668;&#x574f;&#x4e86;" src="static/img/layb-2.jpg"/></div>
+                <div class="swiper-slide"><img alt="&#x4e0d;&#x8fc7;&#x4f60;&#x4e5f;&#x4e0d;&#x53ef;&#x80fd;&#x770b;&#x5230;&#x8fd9;&#x4e9b;&#x6587;&#x5b57;" src="static/img/layb-3.jpg"/></div>
+            </div>
+            <!-- &#x5982;&#x679c;&#x9700;&#x8981;&#x5bfc;&#x822a;&#x6309;&#x94ae; -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </header>
+    <audio src="static/audio/audio-1.mp3" loop="loop" autoplay="autoplay"></audio>
+    <section class="col-md-18 row">
+        <div class="clearFix content">
+            <img class="col-md-6" src="static/img/con-1.jpg" width="400px" height="300px"/>
+            <div class="col-md-6" id='divTyping' style="width: 300px;height:300px; font-family: myFont;font-size: 22px"></div>
+            <img class="col-md-6" src="static/img/con-3.jpg" width="400px" height="300px" />
+        </div>
+    </section>
+    <footer class="col-md-18" style="margin-top: 1%;margin-bottom: 1%">
+        <img  class="f_left col-md-6 col-md-offset-5" src="static/img/con-2.jpg" width="400px" height="300px" />
+    </footer>
+
+</div>
+
+
+
+<script>
+    var str = '&#x5feb;&#x4e50;&#x6bd4;&#x56de;&#x5fc6;&#x91cd;&#x8981;&#xff0c;&#x662f;&#x56e0;&#x4e3a;&#x6bcf;&#x4e00;&#x4efd;&#x5feb;&#x4e50;&#x90fd;&#x5c06;&#x6210;&#x4e3a;&#x56de;&#x5fc6;&#x3002;\n' +
+        '\n' +
+        '&#x4f60;&#x8981;&#x662f;&#x95ee;&#x6211;&#x559c;&#x6b22;&#x4ec0;&#x4e48;&#xff0c;&#x6211;&#x80fd;&#x8bf4;&#x51fa;&#x5f88;&#x591a;&#xff0c;&#x6bd4;&#x5982;&#x6211;&#x559c;&#x6b22;&#x5403;&#x706b;&#x9505;&#xff0c;&#x559c;&#x6b22;&#x6253;&#x7fbd;&#x6bdb;&#x7403;&#xff0c;&#x559c;&#x6b22;&#x770b;&#x7535;&#x5f71;&#xff0c;&#x559c;&#x6b22;&#x6253;&#x6e38;&#x620f;&#xff0c;&#x8fd8;&#x6709;&#x597d;&#x591a;&#x597d;&#x591a;&#x3002;&#x53ef;&#x662f;&#xff0c;&#x6211;&#x559c;&#x6b22;&#x8fd9;&#x4e9b;&#x7684;&#x5f00;&#x59cb;&#xff0c;&#x5f88;&#x591a;&#x662f;&#x56e0;&#x4e3a;&#x548c;&#x4f60;&#x4eec;&#x4e00;&#x8d77;&#x5440;&#x3002;\n' +
+        '\n' +
+        '&#x4e0d;&#x8bba;&#x4eca;&#x540e;&#x5982;&#x4f55;&#xff0c;&#x81f3;&#x5c11;&#x73b0;&#x5728;&#xff0c;&#x6211;&#x662f;&#x5feb;&#x4e50;&#x7684;&#x3002;\n';
+    var i = 0;
+    function typing(){
+        var divTyping = document.getElementById('divTyping');
+        if (i <= str.length) {
+            divTyping.innerHTML = str.slice(0, i++) + '_';
+            setTimeout('typing()', 10);//&#x9012;&#x5f52;&#x8c03;&#x7528;
+        }
+        else{
+            divTyping.innerHTML = str;//&#x7ed3;&#x675f;&#x6253;&#x5b57;,&#x79fb;&#x9664; _ &#x5149;&#x6807;
+        }
+    }
+    typing();
+</script>
 </body>
 </html>

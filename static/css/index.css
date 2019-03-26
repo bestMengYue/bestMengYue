@@ -1,0 +1,22 @@
+body {
+  background-color: rgba(44, 252, 255, 0.64);
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+.wrapper > header:first-child {
+  margin-top: 1%;
+  height: 500px;
+}
+.wrapper > header:first-child > .swiper-container {
+  height: 500px;
+}
+.content {
+  margin-top: 1%;
+  margin-left: 4%;
+}
+.content > img {
+  margin-left: 1%;
+}
+/*# sourceMappingURL=index.css.map */
